@@ -1,0 +1,35 @@
+body {
+  background-color: $background-color;
+  background: url("../img/background_mobile.png") no-repeat right top;
+  color: $text-color;
+  font-family: $main-regular;
+  padding: 0 20px;
+  background-size: cover;
+
+  @media (min-width: $tablet-and-desktop) {
+    background: url("../img/background_desktop.png") no-repeat right top;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+[class*="container"] {
+  min-width: 280px;
+  max-width: 728px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-and-desktop) {
+    min-width: 728px;
+    max-width: 1360px;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: $tablet-and-desktop) {
+    display: none;
+  }
+}
