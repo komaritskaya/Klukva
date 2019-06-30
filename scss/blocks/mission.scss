@@ -1,0 +1,32 @@
+.mission {
+  background-image: url("../img/background_mission_mobile.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &__content {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    font-family: $main-light;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    width: 80%;
+
+    &:nth-child(odd) {
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    &:nth-child(even) {
+      text-align: right;
+      align-self: flex-end;
+    }
+  }
+}

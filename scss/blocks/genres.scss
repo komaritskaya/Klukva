@@ -1,0 +1,57 @@
+.genres {
+  &__container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 40%;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 71px;
+    font-family: $main-regular;
+    text-align: center;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &:before {
+      content: "";
+      display: block;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 84px;
+      margin-bottom: 18px;
+    }
+
+    &--sci-fi:before {
+      background-image: url("../img/svg/sci-fi.svg");
+      width: 48.13px;
+    }
+
+    &--fantasy:before {
+      background-image: url("../img/svg/fantasy.svg");
+      width: 72.44px;
+    }
+
+    &--horror:before {
+      background-image: url("../img/svg/horror.svg");
+      width: 72.59px;
+    }
+
+    &--animation:before {
+      background-image: url("../img/svg/animation.svg");
+      width: 115.11px;
+      height: 84px;
+    }
+  }
+}

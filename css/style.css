@@ -16,13 +16,19 @@
   font-weight: normal;
   font-style: normal; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #1a1426;
-  background: url("../img/background_mobile.png") no-repeat right top;
+  background-image: url("../img/background_mobile.png");
+  background-repeat: no-repeat;
+  background-position: right top;
   color: #c4bbd4;
   font-family: "Ubuntu Regular", serif;
   padding: 0 20px;
-  background-size: cover; }
+  background-size: contain; }
   @media (min-width: 768px) {
     body {
       background: url("../img/background_desktop.png") no-repeat right top; } }
@@ -44,6 +50,12 @@ a {
 @media (min-width: 768px) {
   .hide-desktop {
     display: none; } }
+
+.section__title {
+  color: #f77481;
+  font-family: "Ubuntu Medium", serif;
+  font-size: 24px;
+  line-height: 36px; }
 
 .page__header {
   padding: 28px 0;
@@ -97,6 +109,10 @@ a {
     line-height: 18px;
     position: relative;
     text-align: center; }
+    @media (min-width: 768px) {
+      .promo__sponsor {
+        font-size: 36px;
+        line-height: 41px; } }
   .promo__sponsor-img {
     width: 88px;
     height: 14px; }
@@ -106,6 +122,13 @@ a {
     line-height: 18px;
     letter-spacing: 0.09em;
     text-align: center; }
+  .promo__slogan {
+    font-family: "Ubuntu Light", serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 265px;
+    text-align: center;
+    padding: 0 10px; }
 
 .btn {
   color: #333333;
@@ -114,5 +137,96 @@ a {
   line-height: 18px;
   padding: 10px 14px;
   border-radius: 4px; }
+
+.genres__container {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.genres__item {
+  width: 40%;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 71px;
+  font-family: "Ubuntu Regular", serif;
+  text-align: center;
+  position: relative;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .genres__item:before {
+    content: "";
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 84px;
+    margin-bottom: 18px; }
+  .genres__item--sci-fi:before {
+    background-image: url("../img/svg/sci-fi.svg");
+    width: 48.13px; }
+  .genres__item--fantasy:before {
+    background-image: url("../img/svg/fantasy.svg");
+    width: 72.44px; }
+  .genres__item--horror:before {
+    background-image: url("../img/svg/horror.svg");
+    width: 72.59px; }
+  .genres__item--animation:before {
+    background-image: url("../img/svg/animation.svg");
+    width: 115.11px;
+    height: 84px; }
+
+.mission {
+  background-image: url("../img/background_mission_mobile.png");
+  background-repeat: no-repeat;
+  background-position: right top; }
+  .mission__content {
+    width: 100%;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .mission__item {
+    font-family: "Ubuntu Light", serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    width: 80%; }
+    .mission__item:nth-child(odd) {
+      text-align: left;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+    .mission__item:nth-child(even) {
+      text-align: right;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
 
 /*# sourceMappingURL=style.css.map */
