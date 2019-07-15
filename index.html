@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
-    <header class="page__header">
-      <img class="page__logo" src="./img/svg/logo.svg" alt="klukva" />
-      <a href="#" class="btn hide-desktop">Подать заявку</a>
-      <a href="#" class="burger hide-desktop">
-        <img src="./img/svg/burger.svg" alt="burger_menu" />
-      </a>
+    <header class="page-header">
+      <div class="page-header__container">
+        <img class="page__logo" src="./img/svg/logo.svg" alt="klukva" />
+        <a href="#" class="btn hide-desktop">Подать заявку</a>
+        <a href="#" class="burger hide-desktop">
+          <img src="./img/svg/burger.svg" alt="burger_menu" />
+        </a>
+      </div>
     </header>
 
     <main>
@@ -48,35 +52,44 @@
       </section>
     </main>
 
-    <section class="stages">
-      <div class="stages__item">
-        <div class="stages__item-date">01/09</div>
-        <div class="stages__item-description">
-          Принимаем заявки на&nbsp;участие
+    <!--
+      <section class="stages">
+        <div class="stages__container">
+          <h2 class="stages__title section__title">Этапы конкурса</h2>
+          <div class="stages__content">
+            <div class="stages__item">
+              <div class="stages__item-date">01/09</div>
+              <div class="stages__item-description">
+                Принимаем заявки на&nbsp;участие
+              </div>
+            </div>
+            <div class="stages__item">
+              <div class="stages__item-date">10/11</div>
+              <div class="stages__item-description">
+                Отбираем лучшие синопсисы
+              </div>
+            </div>
+            <div class="stages__item">
+              <div class="stages__item-date">11/12</div>
+              <div class="stages__item-description">Участники снимают фильм</div>
+            </div>
+            <div class="stages__item">
+              <div class="stages__item-date">03/05</div>
+              <div class="stages__item-description">
+                Составляем шорт-лист из&nbsp;лучших работ
+              </div>
+            </div>
+            <div class="stages__item">
+              <div class="stages__item-date">17/05</div>
+              <div class="stages__item-description">
+                Показываем работы на&nbsp;фестивале жюри и&nbsp;гостям Старкона
+              </div>
+            </div>
+            <p class="stages__final">Награждаем победителей</p>
+          </div>
         </div>
-      </div>
-      <div class="stages__item">
-        <div class="stages__item-date">10/11</div>
-        <div class="stages__item-description">Отбираем лучшие синопсисы</div>
-      </div>
-      <div class="stages__item">
-        <div class="stages__item-date">11/12</div>
-        <div class="stages__item-description">Участники снимают фильм</div>
-      </div>
-      <div class="stages__item">
-        <div class="stages__item-date">03/05</div>
-        <div class="stages__item-description">
-          Составляем шорт-лист из&nbsp;лучших работ
-        </div>
-      </div>
-      <div class="stages__item">
-        <div class="stages__item-date">17/05</div>
-        <div class="stages__item-description">
-          Показываем работы на&nbsp;фестивале жюри и&nbsp;гостям Старкона
-        </div>
-      </div>
-      <p class="stages__final">Награждаем победителей</p>
-    </section>
+      </section>
+    -->
 
     <section class="mission">
       <div class="mission__container">
@@ -95,8 +108,8 @@
     </section>
 
     <section class="videos">
-      <div class="videos__intro">
-        <h2 class="videos__title section__subtitle">
+      <div class="videos__container">
+        <h2 class="videos__title section__title">
           Фильмы участников прошлых лет
         </h2>
         <p class="videos__subtitle">
@@ -104,172 +117,259 @@
           посмотрите, как круто они справились!
         </p>
       </div>
-      <div class="videos__carousel"></div>
+      <div class="videos__carousel">
+        <div class="videos__carousel-item">
+          <iframe
+            src="https://player.vimeo.com/video/21785003"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="videos__carousel-item">
+          <iframe
+            src="https://player.vimeo.com/video/75039847"
+            width="640"
+            height="480"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="videos__carousel-item">
+          <iframe
+            src="https://player.vimeo.com/video/8537554"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       <a href="#" class="videos__more"
         >Смотри все фильмы на&nbsp;нашем YouTube канале</a
       >
     </section>
 
     <section class="prizes">
-      <h2 class="prizes__title">Призы</h2>
-      <div class="prizes__content">
+      <div class="prizes__container">
+        <h2 class="prizes__title section__title">Призы</h2>
+        <div class="prizes__content">
+          <div class="prizes__item">
+            <div class="prizes__item-info">
+              <h3 class="prizes__item-title">
+                Показ фильма на&nbsp;главной сцене фестиваля Старкон
+              </h3>
+              <div class="prizes__item-text">
+                Лучшие фильмы оценят жюри и&nbsp;свыше 30к гостей фестиваля
+                Старкон в&nbsp;кинозале. Но&nbsp;и&nbsp;это не&nbsp;всё.
+                Фильм-победитель покажут на&nbsp;торжественном закрытии
+                мероприятия.
+              </div>
+            </div>
+            <img
+              src="./img/prizes/starcon.svg"
+              alt="#"
+              class="prizes__item-photo"
+            />
+          </div>
+          <div class="prizes__item">
+            <div class="prizes__item-info">
+              <h3 class="prizes__item-title">
+                Альманах из&nbsp;лучших работ на&nbsp;стриминговом сервисе
+              </h3>
+              <div class="prizes__item-text">
+                Топ-лучших работ попадут в&nbsp;альманах на&nbsp;N.&nbsp;Твой
+                фильм увидят наравне с&nbsp;мировыми сериалами.
+              </div>
+            </div>
+            <img
+              src="./img/prizes/stream.svg"
+              alt="#"
+              class="prizes__item-photo"
+            />
+          </div>
+          <div class="prizes__item">
+            <div class="prizes__item-info">
+              <h3 class="prizes__item-title">Обзор фильма youtube блогером</h3>
+              <div class="prizes__item-text">
+                Думаешь, блогеры обозревают только блокбастеры? Впечатли
+                видеоблогера&nbsp;Y, и&nbsp;тогда твоё кино увидят сотни тысяч
+                кинолюбителей на&nbsp;Youtube.
+              </div>
+            </div>
+            <img
+              src="./img/prizes/bloger.svg"
+              alt="#"
+              class="prizes__item-photo"
+            />
+          </div>
+          <div class="prizes__item">
+            <div class="prizes__item-info">
+              <h3 class="prizes__item-title">
+                Показ фильма в&nbsp;эфире телеканала Sony Sci-Fi
+              </h3>
+              <div class="prizes__item-text">
+                Мама, я&nbsp;в&nbsp;телевизоре! Продюсеры телеканала Sony Sci-Fi
+                выберут лучшую работу и&nbsp;покажут в&nbsp;эфире. Это может
+                быть твой фильм!
+              </div>
+            </div>
+            <img
+              src="./img/prizes/sony.svg"
+              alt="#"
+              class="prizes__item-photo"
+            />
+          </div>
+          <div class="prizes__item">
+            <div class="prizes__item-info">
+              <h3 class="prizes__item-title">Стажировки</h3>
+              <div class="prizes__item-text">
+                В&nbsp;жюри конкурса будут продюсеры и&nbsp;режиссеры крупнейших
+                российских киностудий. Произведи впечатление на&nbsp;них
+                и&nbsp;получи возможность пройти стажировку на&nbsp;студии.
+              </div>
+            </div>
+            <img
+              src="./img/prizes/internship.svg"
+              alt="#"
+              class="prizes__item-photo"
+            />
+          </div>
+        </div>
         <div class="prizes__item">
           <div class="prizes__item-info">
-            <h3 class="prizes__item-title">
-              Показ фильма на&nbsp;главной сцене фестиваля Старкон
-            </h3>
+            <h3 class="prizes__item-title">Твой первый продакт-плейсмент</h3>
             <div class="prizes__item-text">
-              Лучшие фильмы оценят жюри и&nbsp;свыше 30к гостей фестиваля
-              Старкон в&nbsp;кинозале. Но&nbsp;и&nbsp;это не&nbsp;всё.
-              Фильм-победитель покажут на&nbsp;торжественном закрытии
-              мероприятия.
+              Пошли отсылочки к&nbsp;прошлым конкурсам. Кто не&nbsp;помнит,
+              раньше мы&nbsp;обязывали встраивать ракету фестиваля Старкон
+              во&nbsp;все фильмы. Прошла эпоха, пришла реклама. Мы&nbsp;дарим
+              скромные 10&nbsp;000 рублей каждому, кто захочет интегрировать
+              ракету в&nbsp;свою работу. Автор самой интересной интеграции
+              получит денежный приз.
             </div>
           </div>
-          <img src="#" alt="#" class="prizes__item-photo" />
+          <img
+            src="./img/prizes/integration.svg"
+            alt="#"
+            class="prizes__item-photo"
+          />
         </div>
-        <div class="prizes__item">
-          <div class="prizes__item-info">
-            <h3 class="prizes__item-title">
-              Альманах из&nbsp;лучших работ на&nbsp;стриминговом сервисе
-            </h3>
-            <div class="prizes__item-text">
-              Топ-лучших работ попадут в&nbsp;альманах на&nbsp;N.&nbsp;Твой
-              фильм увидят наравне с&nbsp;мировыми сериалами.
-            </div>
-          </div>
-          <img src="#" alt="#" class="prizes__item-photo" />
-        </div>
-        <div class="prizes__item">
-          <div class="prizes__item-info">
-            <h3 class="prizes__item-title">Обзор фильма youtube блогером</h3>
-            <div class="prizes__item-text">
-              Думаешь, блогеры обозревают только блокбастеры? Впечатли
-              видеоблогера&nbsp;Y, и&nbsp;тогда твоё кино увидят сотни тысяч
-              кинолюбителей на&nbsp;Youtube.
-            </div>
-          </div>
-          <img src="#" alt="#" class="prizes__item-photo" />
-        </div>
-        <div class="prizes__item">
-          <div class="prizes__item-info">
-            <h3 class="prizes__item-title">
-              Показ фильма в&nbsp;эфире телеканала Sony Sci-Fi
-            </h3>
-            <div class="prizes__item-text">
-              Мама, я&nbsp;в&nbsp;телевизоре! Продюсеры телеканала Sony Sci-Fi
-              выберут лучшую работу и&nbsp;покажут в&nbsp;эфире. Это может быть
-              твой фильм!
-            </div>
-          </div>
-          <img src="#" alt="#" class="prizes__item-photo" />
-        </div>
-        <div class="prizes__item">
-          <div class="prizes__item-info">
-            <h3 class="prizes__item-title">Стажировки</h3>
-            <div class="prizes__item-text">
-              В&nbsp;жюри конкурса будут продюсеры и&nbsp;режиссеры крупнейших
-              российских киностудий. Произведи впечатление на&nbsp;них
-              и&nbsp;получи возможность пройти стажировку на&nbsp;студии.
-            </div>
-          </div>
-          <img src="#" alt="#" class="prizes__item-photo" />
-        </div>
-      </div>
-      <div class="prizes__item">
-        <div class="prizes__item-info">
-          <h3 class="prizes__item-title">Твой первый продакт-плейсмент</h3>
-          <div class="prizes__item-text">
-            Пошли отсылочки к&nbsp;прошлым конкурсам. Кто не&nbsp;помнит, раньше
-            мы&nbsp;обязывали встраивать ракету фестиваля Старкон во&nbsp;все
-            фильмы. Прошла эпоха, пришла реклама. Мы&nbsp;дарим скромные
-            10&nbsp;000 рублей каждому, кто захочет интегрировать ракету
-            в&nbsp;свою работу. Автор самой интересной интеграции получит
-            денежный приз.
-          </div>
-        </div>
-        <img src="#" alt="#" class="prizes__item-photo" />
       </div>
     </section>
 
     <section class="jury">
-      <h2 class="jury__title">Жюри</h2>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Светлана Стахнёва</h3>
-          <p class="jury__description">
-            Этот человек решает судьбу твоей работы
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Стэнли Кубрик</h3>
-          <p class="jury__description">
-            Создатель того самого красного космонавта
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Ридли Скотт</h3>
-          <p class="jury__description">
-            Режиссёр &laquo;Чужого&raquo;, &laquo;Бегущего
-            по&nbsp;лезвию&raquo;, &laquo;Гладиатора&raquo; и&nbsp;десятков
-            других легендарных фильмов
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Уэс Андерсон</h3>
-          <p class="jury__description">
-            Режиссёр самых симметричных и&nbsp;красочных картин
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Дэвид Линч</h3>
-          <p class="jury__description">
-            Легендарный представитель американского независимого кинематографа
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Джеймс Кэмерон</h3>
-          <p class="jury__description">
-            Один из&nbsp;самых успешных режиссёров в&nbsp;истории кино
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Квентин Тарантино</h3>
-          <p class="jury__description">
-            Один из&nbsp;наиболее ярких представителей постмодернизма
-            в&nbsp;кинематографе
-          </p>
-        </div>
-      </div>
-      <div class="jury__item">
-        <img src="" alt="" class="jury__photo" />
-        <div class="jury__info">
-          <h3 class="jury__name">Неизвестно</h3>
-          <p class="jury__description">Крутой деятель кино</p>
+      <div class="jury__container">
+        <h2 class="jury__title section__title">Жюри</h2>
+        <div class="jury__content">
+          <div class="jury__item jury__item--main">
+            <img
+              src="./img/jury/Svetlana.png"
+              alt="Svetlana"
+              class="jury__photo"
+            />
+            <div class="jury__info">
+              <h3 class="jury__name">Светлана Стахнёва</h3>
+              <p class="jury__description">
+                Этот человек решает судьбу твоей работы
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img
+              src="./img/jury/Kubrick.png"
+              alt="Kubrick"
+              class="jury__photo"
+            />
+            <div class="jury__info">
+              <h3 class="jury__name">Стэнли Кубрик</h3>
+              <p class="jury__description">
+                Создатель того самого красного космонавта
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img src="./img/jury/Scott.png" alt="Scott" class="jury__photo" />
+            <div class="jury__info">
+              <h3 class="jury__name">Ридли Скотт</h3>
+              <p class="jury__description">
+                Режиссёр &laquo;Чужого&raquo;, &laquo;Бегущего
+                по&nbsp;лезвию&raquo;, &laquo;Гладиатора&raquo; и&nbsp;десятков
+                других легендарных фильмов
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img
+              src="./img/jury/Anderson.png"
+              alt="Anderson"
+              class="jury__photo"
+            />
+            <div class="jury__info">
+              <h3 class="jury__name">Уэс Андерсон</h3>
+              <p class="jury__description">
+                Режиссёр самых симметричных и&nbsp;красочных картин
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img src="./img/jury/Lynch.png" alt="Lynch" class="jury__photo" />
+            <div class="jury__info">
+              <h3 class="jury__name">Дэвид Линч</h3>
+              <p class="jury__description">
+                Легендарный представитель американского независимого
+                кинематографа
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img
+              src="./img/jury/Cameron.png"
+              alt="Cameron"
+              class="jury__photo"
+            />
+            <div class="jury__info">
+              <h3 class="jury__name">Джеймс Кэмерон</h3>
+              <p class="jury__description">
+                Один из&nbsp;самых успешных режиссёров в&nbsp;истории кино
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img
+              src="./img/jury/Tarantino.png"
+              alt="Tarantino"
+              class="jury__photo"
+            />
+            <div class="jury__info">
+              <h3 class="jury__name">Квентин Тарантино</h3>
+              <p class="jury__description">
+                Один из&nbsp;наиболее ярких представителей постмодернизма
+                в&nbsp;кинематографе
+              </p>
+            </div>
+          </div>
+          <div class="jury__item">
+            <img
+              src="./img/jury/Unknown.png"
+              alt="Klukva"
+              class="jury__photo"
+            />
+            <div class="jury__info">
+              <h3 class="jury__name">Неизвестно</h3>
+              <p class="jury__description">Крутой деятель кино</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="rules">
       <div class="rules__container">
+        <h2 class="rules__title section__title">Правила участия</h2>
         <div class="rules__accordion">
           <div class="rules__item">
             <h3 class="rules__item-title">Важно</h3>
@@ -332,25 +432,54 @@
 
     <section class="partners">
       <div class="partners__container">
-        <h2 class="partners__title">Партнёры</h2>
+        <h2 class="partners__title section__title">Партнёры</h2>
         <div class="partners__content">
           <div class="partners__category">
             <h3 class="partners__category-title">Генеральный партнёр</h3>
-            <div class="partners__items-list"></div>
+            <div class="partners__items-list">
+              <img
+                src="./img/partners/Kinoafisha.png"
+                alt="Kinoafisha"
+                class="partners__item-photo"
+              />
+            </div>
           </div>
           <div class="partners__category">
             <h3 class="partners__category-title">
               Генеральные информационные партнёры
             </h3>
-            <div class="partners__items-list"></div>
+            <div class="partners__items-list">
+              <img
+                src="./img/partners/NRG_Radio.png"
+                alt="NRG"
+                class="partners__item-photo"
+              />
+            </div>
           </div>
           <div class="partners__category">
             <h3 class="partners__category-title">Информационные партнёры</h3>
-            <div class="partners__items-list"></div>
+            <div class="partners__items-list">
+              <img
+                src="./img/partners/Kinoafisha.png"
+                alt="Kinoafisha"
+                class="partners__item-photo"
+              />
+            </div>
           </div>
           <div class="partners__category">
             <h3 class="partners__category-title">Специальные партнёры</h3>
-            <div class="partners__items-list"></div>
+            <div class="partners__items-list">
+              <img
+                src="./img/partners/Sony.png"
+                alt="Sony"
+                class="partners__item-photo"
+              />
+              <img
+                src="./img/partners/Peterburg2.png"
+                alt="Peterburg2"
+                class="partners__item-photo"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -358,18 +487,28 @@
 
     <section class="contacts">
       <div class="contacts__container">
-        <h2 class="contacts__title section__title"></h2>
+        <h2 class="contacts__title section__title">Контакты</h2>
         <div class="contacts__content">
           <div class="contacts__info">
             <div class="contacts__address"></div>
             <div class="contacts__mail"></div>
             <div class="contacts__icons"></div>
-            <contacts__organizators></contacts__organizators>
+            <div class="contacts__organizators"></div>
           </div>
         </div>
       </div>
     </section>
 
     <footer></footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>

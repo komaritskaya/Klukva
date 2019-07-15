@@ -18,7 +18,9 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   background-color: #1a1426;
@@ -27,7 +29,6 @@ body {
   background-position: right top;
   color: #c4bbd4;
   font-family: "Ubuntu Regular", serif;
-  padding: 0 20px;
   background-size: contain; }
   @media (min-width: 768px) {
     body {
@@ -38,10 +39,12 @@ a {
   color: inherit; }
 
 [class*="container"] {
-  min-width: 280px;
-  max-width: 728px;
+  min-width: 320px;
+  max-width: 768px;
+  padding: 0 20px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   @media (min-width: 768px) {
     [class*="container"] {
       min-width: 728px;
@@ -55,23 +58,8 @@ a {
   color: #f77481;
   font-family: "Ubuntu Medium", serif;
   font-size: 24px;
-  line-height: 36px; }
-
-.page__header {
-  padding: 28px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  line-height: 36px;
+  text-align: center; }
 
 .page__logo {
   width: 49.5px;
@@ -100,6 +88,23 @@ a {
   line-height: 28px;
   letter-spacing: 0.05em;
   margin-bottom: 35px; }
+
+.page-header {
+  padding: 28px 0; }
+  .page-header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .promo {
   padding: 106px 0; }
@@ -201,8 +206,11 @@ a {
   background-image: url("../img/background_mission_mobile.png");
   background-repeat: no-repeat;
   background-position: right top; }
+  .mission__title {
+    margin-bottom: 33px; }
   .mission__content {
     width: 100%;
+    margin: 70px 0;
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,6 +224,7 @@ a {
             justify-content: flex-start; }
   .mission__item {
     font-family: "Ubuntu Light", serif;
+    margin-bottom: 67px;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.03em;
@@ -228,5 +237,65 @@ a {
       text-align: right;
       -ms-flex-item-align: end;
           align-self: flex-end; }
+
+.prizes__item {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 768px) {
+    .prizes__item:nth-child(odd) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media (min-width: 768px) {
+    .prizes__item:nth-child(even) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
+
+.prizes__item-title {
+  font-family: "Ubuntu Regular", serif;
+  font-size: 18px;
+  line-height: 27px; }
+
+.prizes__item-text {
+  font-family: "Ubuntu Light", serif;
+  font-size: 16px;
+  line-height: 26px; }
+
+.jury__content {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.jury__item {
+  width: 35.7%; }
+  .jury__item--main {
+    width: 100%; }
+
+.jury__name {
+  font-family: "Ubuntu Regular", serif;
+  font-size: 14px;
+  line-height: 21px; }
+
+.jury__description {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

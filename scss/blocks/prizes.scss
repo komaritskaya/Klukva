@@ -1,0 +1,35 @@
+.prizes {
+  &__item {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(odd) {
+      @media (min-width: $tablet-and-desktop) {
+        flex-direction: row;
+      }
+    }
+
+    &:nth-child(even) {
+      @media (min-width: $tablet-and-desktop) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: $main-regular;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__item-text {
+    font-family: $main-light;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__item-photo {
+  }
+}
